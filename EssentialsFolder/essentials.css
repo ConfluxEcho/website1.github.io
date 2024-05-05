@@ -1,0 +1,316 @@
+#aboutusMain{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    background-color:hsl(211, 56%, 54%);
+    height:180vh;
+}
+#aboutusMain h1{
+    font-size:4rem;
+}
+#ourmission{
+    border:5px dashed black;
+    position:relative;
+    height:20%;
+    width:70%;
+    background-color:hsl(65, 100%, 70%);
+    align-self:flex-end;
+    margin-right:90px;
+}
+#ourmission h2{
+    font-size:3rem;
+    text-align:center;
+    margin-top:15px;
+    border-bottom:10px double black;
+}
+#ourmission pre{
+    font-size:1.5rem;
+    text-align:center;
+    position:relative;
+    left:-2%;
+}
+#teammembers{
+    border:5px dashed black;
+    position:relative;
+    height:20%;
+    width:70%;
+    background-color:hsl(120, 73%, 36%);
+    align-self:flex-start;
+    margin-left:90px;
+    display:flex;
+    flex-direction:row-reverse;
+}
+#teammembersHdiv{
+    flex:1;
+    position:relative;
+    height:100%;
+    font-size:5rem;
+    text-align:center;
+    margin-right:15px;
+    margin-top:0;
+    border-left:10px dotted black;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+}
+#teammembersUL{
+    flex:1;
+    position:relative;
+    height:100%;
+    margin-top:0;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    font-size:5rem;
+}
+#teammembersUL ul{
+    margin-left:50px;
+}
+#ourexperience{
+    border:5px dashed black;
+    position:relative;
+    height:20%;
+    width:70%;
+    background-color:hsl(6, 75%, 49%);
+    align-self:flex-end;
+    margin-right:90px;
+    display:flex;
+    flex-direction:column;
+}
+#bigimgdiv{
+    flex:1;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding:0;
+}
+.imgdiv{
+    width:30%;
+    height:32%;
+}
+.imgdiv img{
+    border:2px solid black;
+    width:25%;
+    height:49%;
+    position:absolute;
+}
+#ourexperience h2{
+    flex:1;
+    border-top:5px solid black;
+    font-size:5rem;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#ourusers{
+    border:5px dashed black;
+    position:relative;
+    height:20%;
+    width:70%;
+    background-color:hsl(0, 0%, 80%);
+    align-self:flex-start;
+    margin-left:90px;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+#ratings{
+    flex:1;
+    border-left:10px dotted black;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+}
+#fivestar{
+    flex:1;
+    border-bottom:2px solid black;
+}
+#onestar{
+    flex:1;
+}
+#ratings h3{
+    font-size:2rem;
+}
+#ratings pre{
+    font-size:1.5rem;
+}
+#ourusers h2{
+    flex:1;
+    text-align:center;
+    font-size:5rem;
+}
+#firstarrow{
+    position:absolute;
+    width:100%;
+    transform:rotateZ(46deg);
+    top:100%;
+    left:0%;
+}
+#firstarrow img{
+    width:10%;
+}
+#secondarrow{
+    position:absolute;
+    width:100%;
+    transform:rotateZ(60deg);
+    top:155%;
+    left:55%;
+}
+#secondarrow img{
+    width:10%;
+}
+#thirdarrow{
+    position:absolute;
+    width:100%;
+    transform:rotateZ(60deg);
+    top:200%;
+    left:-10%;
+}
+#thirdarrow img{
+    width:10%;
+}
+#fourtharrow{
+    position:absolute;
+    width:100%;
+    transform:rotateZ(60deg);
+    top:240%;
+    left:55%;
+}
+#fourtharrow img{
+    width:10%;
+}
+/*------------------------------*/
+#cookiemain{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding:50px;
+}
+#cookiemain h1{
+    font-size:3.5rem;
+    font-weight:bolder;
+}
+#cookiemain pre{
+    font-size:2rem;
+}
+#cookieimg{
+    position:absolute;
+    right:5%;
+    top:30%;
+}
+/*------------------------------*/
+#supportmain{
+    display:flex;
+    flex-direction:column;
+}
+#supportmain h1{
+    font-size:5rem;
+    margin-bottom:3%;
+}
+#formdiv{
+    border:3px solid black;
+    background-color:hsl(60, 79%, 41%);
+    position:relative;
+    width:30%;
+    height:60%;
+}
+#namelabel{
+    position:absolute;
+    top:5%;
+    left:10%;
+    font-size:3rem;
+}
+#nameinput{
+    position:absolute;
+    top:5%;
+    left:26%;
+    width:60%;
+    font-size:3rem;
+}
+#emaillabel{
+    position:absolute;
+    top:20%;
+    left:10%;
+    font-size:3rem;
+}
+#emailinput{
+    position:absolute;
+    top:20%;
+    left:26%;
+    width:60%;
+    font-size:3rem;
+}
+#problemtypelabel{
+    position:absolute;
+    top:35%;
+    left:10%;
+    font-size:3rem;
+}
+#problemButton{
+    position:absolute;
+    top:35%;
+    left:50%;
+    font-size:3rem;
+}
+#problemlabel{
+    position:absolute;
+    top:48%;
+    left:5%;
+    font-size:2rem;
+}
+#probleminput{
+    margin-top:30%;
+    margin-left:5%;
+    width:90%;
+    height:200px;
+    font-size:2rem;
+}
+#submitButton{
+    position:absolute;
+    top:88%;
+    left:40%;
+    font-size:3rem;
+    border:none;
+    background-color:hsl(120, 69%, 52%);
+    border-radius:20px;
+}
+#submitButton:hover{
+    background-color:hsl(120, 63%, 41%);
+}
+#submitButton:active{
+    background-color:hsl(120, 65%, 28%);
+}
+#pb1{
+    position:absolute;
+    top:43%;
+    left:50%;
+    width:50%;
+    height:6%;
+    font-size:2rem;
+    display:none;
+}
+#pb2{
+    position:absolute;
+    top:49%;
+    left:50%;
+    width:50%;
+    height:6%;
+    font-size:2rem;
+    display:none;
+}
+#pb3{
+    position:absolute;
+    top:55%;
+    left:50%;
+    width:50%;
+    height:6%;
+    font-size:2rem;
+    display:none;
+}
+#accountButton{
+    display:none;
+}

@@ -1,0 +1,232 @@
+main{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+main h1{
+    margin-bottom:50px;
+    font-size:4rem;
+}
+#maindiv{
+    width:80%;
+    height:80%;
+    background-color:hsl(39, 64%, 49%);
+    border-radius:10px;
+    position:relative;
+}
+#selectionButton{
+    position:relative;
+    top:-4%;
+    width:9%;
+    height:4%;
+    font-size:1.3rem;
+    border-radius:5px;
+    border:none;
+    background-color:hsl(207, 100%, 61%);
+}
+#selectionButton:hover{
+    background-color:hsl(207, 64%, 47%);
+}
+#selectiondiv{
+    position:absolute;
+    top:0%;
+    width:5%;
+    height:15%;
+    background-color:hsl(207, 100%, 61%);
+    border-radius:10px;
+}
+#selectiondiv button{
+    width:100%;
+    height:25%;
+    font-size:1.5rem;
+    background-color:hsla(0,0%,0%,0);
+    border:none;
+}
+#selectiondiv button:hover{
+    background-color:hsl(207, 64%, 47%);
+}
+.displaynone{
+    display:none;
+}
+.displayblock{
+    display:block;
+}
+#stats1{
+    position:relative;
+    display:flex;
+    width:80%;
+    left:10%;
+    top:-3%;
+    margin:0;
+    font-size:2rem;
+}
+#spentlabel{
+    flex:0 0 75%;
+}
+#budgetlabel{
+    flex:0 0 25%;
+}
+.bar-container1{
+    width:80%;
+    height:40px;
+    position:relative;
+    left:10%;
+    top:-5%;
+    border:2px solid black;
+    overflow:hidden;
+    margin-top:0;
+    background-color:hsl(0, 3%, 58%);
+    border-radius:20px;
+}
+.bar1{
+    width:0%;
+    height:100%;
+    background-color:hsl(99, 71%, 45%);
+}
+#stats2{
+    position:relative;
+    display:flex;
+    width:80%;
+    left:10%;
+    top:-3%;
+    margin:0;
+    font-size:2rem;
+}
+#earningslabel{
+    flex:0 0 75%;
+}
+#sumlabel{
+    flex:0 0 25%;
+}
+.bar-container2{
+    width:80%;
+    height:40px;
+    position:relative;
+    left:10%;
+    top:-5%;
+    border:2px solid black;
+    overflow:hidden;
+    margin-top:0;
+    background-color:hsl(0, 3%, 58%);
+    border-radius:20px;
+}
+.bar2{
+    width:0%;
+    height:100%;
+    background-color:hsl(99, 71%, 45%);
+}
+#stats3{
+    position:relative;
+    display:flex;
+    width:80%;
+    left:10%;
+    top:-3%;
+    margin:0;
+    font-size:2rem;
+}
+#savingslabel{
+    flex:0 0 75%;
+}
+#goallabel{
+    flex:0 0 25%;
+}
+.bar-container3{
+    width:80%;
+    height:40px;
+    position:relative;
+    left:10%;
+    top:-5%;
+    border:2px solid black;
+    overflow:hidden;
+    margin-top:0;
+    background-color:hsl(0, 3%, 58%);
+    border-radius:20px;
+}
+.bar3{
+    width:0%;
+    height:100%;
+    background-color:hsl(99, 71%, 45%);
+}
+#maindiv h1{
+    text-align:center;
+    position:relative;
+    top:5%;
+}
+/*-------------------*/
+#settingsdiv{
+    position:relative;
+    flex:0 0 80%;
+    width:30%;
+    height:600px;
+    background-color:hsl(39, 64%, 49%);
+}
+#namelabel{
+    position:relative;
+    top:10%;
+    left:20%;
+    font-size:3rem;
+}
+#nameinput{
+    position:relative;
+    top:10%;
+    left:29.5%;
+    height:7%;
+    width:40%;
+    font-size:3rem;
+}
+#userlabel{
+    position:relative;
+    top:20%;
+    left:18%;
+    font-size:3rem;
+}
+#userinput{
+    position:relative;
+    top:20%;
+    left:20.3%;
+    height:7%;
+    width:40%;
+    font-size:3rem;
+}
+#passlabel{
+    position:relative;
+    top:30%;
+    left:18%;
+    font-size:3rem;
+}
+#passinput{
+    position:relative;
+    top:30%;
+    left:21%;
+    height:7%;
+    width:40%;
+    font-size:3rem;
+}
+#submitButton{
+    position:relative;
+    background-color:hsl(120, 86%, 55%);
+    top:40%;
+    left:30%;
+    width:40%;
+    height:10%;
+    font-size:2.5rem;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+}
+#submitButton:hover{
+    background-color:hsl(120, 86%, 45%);
+}
+#logoutButton{
+    position:relative;
+    top:55%;
+    background-color:hsl(0, 100%, 50%);
+    font-size:3rem;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+#logoutButton:hover{
+    background-color:hsl(0, 100%, 40%);
+}

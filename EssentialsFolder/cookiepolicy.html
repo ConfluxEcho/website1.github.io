@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../StartFolder/style.css">
+    <link rel="stylesheet" href="essentials.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a id="logoButton"><img src="../Images/LogoSmall.png" alt="logo"></a>
+        </div>
+        <nav id="headernav">
+            <ul>
+                <li><a id="homeButton">Home</a></li>
+                <li><a href="../EssentialsFolder/about.html">About</a></li>
+                <li><a href="../EssentialsFolder/support.html">Support</a></li>
+                <li><a id="accountButton" href="../MainFolder/settings.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="cookiemain">
+        <h1>Cookie policy</h1>
+        <pre>
+Welcome to BudgetBuddy, where cookies aren't just for snacking - they're also for tracking!
+
+🍪 Here at BudgetBuddy, we believe in transparency, even when it comes to cookies. So, let's talk
+about the cookies we use and why they're sweeter than your grandma's secret recipe.
+
+🍪 Chocolate Chip Cookies: These little nuggets of joy help us understand how you use our website
+so we can make it even better. Plus, they're perfect for dunking in milk while we crunch those numbers!
+
+🍪 Peanut Butter Cookies: Just like peanut butter and jelly, these cookies stick around to remember
+your preferences. Whether you're a crunchy or creamy kind of person, we've got you covered.
+
+🍪 Oatmeal Raisin Cookies: Some call them controversial, but we call them misunderstood. These
+cookies help us analyze website traffic and figure out what pages are raisin' the roof!
+
+But don't worry, we're not storing your secrets in a cookie jar. Your privacy is as important
+to us as finding that last chocolate chip in the bag. We'll never use cookies to identify you personally -
+unless you're Cookie Monster, in which case, hi there! 🍪👋
+
+By continuing to browse our site, you're consenting to the use of these delicious cookies.
+If you prefer to stick to real cookies, we totally understand - just know that you might
+miss out on some of the magic that makes BudgetBuddy so sweet!
+
+Thanks for indulging in our cookie policy. Now go ahead, treat yourself to a real cookie
+while you manage your finances like a boss! 🍪💼
+    </pre>
+    <div id="cookieimg"><img src="../Images/Cookie.png" alt="Cookie"></div>
+    </main>
+
+    <footer>
+        <div id="headerelements">
+            <button><a>· Home</a></button>
+            <button><a href="../EssentialsFolder/about.html">· About</a></button>
+            <button><a href="../EssentialsFolder/support.html">· Support</a></button>
+        </div>
+        <div id="policies">
+            <button><a href="cookiepolicy.html">· Cookie policy</a></button>
+        </div>
+        <div id="footerlogoimage">
+            <img src="../Images/LogoSmall.png">
+        </div>
+    </footer>
+    <script>
+        const homeButton = document.getElementById("homeButton");
+        const logoButton = document.getElementById("logoButton");
+        const accountButton = document.getElementById("accountButton");
+
+        window.onload = function(){
+            loggedIn = localStorage.getItem("loginsave");
+            if(loggedIn == "true"){
+                homeButton.href = "../MainFolder/overview.html";
+                logoButton.href = "../MainFolder/overview.html";
+                accountButton.style.display = "inline";
+            }
+            else{
+                homeButton.href = "../StartFolder/index.html";
+                logoButton.href = "../StartFolder/index.html";
+                accountButton.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

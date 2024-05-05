@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../StartFolder/style.css">
+    <link rel="stylesheet" href="essentials.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a id="logoButton"><img src="../Images/LogoSmall.png" alt="logo"></a>
+        </div>
+        <nav id="headernav">
+            <ul>
+                <li><a id="homeButton">Home</a></li>
+                <li><a href="../EssentialsFolder/about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a id="accountButton" href="../MainFolder/settings.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="supportmain">
+        <h1>Support</h1>
+        <div id="formdiv">
+            <form id="form">
+                <label id="namelabel" for="name">Name:</label>
+                <input id="nameinput" name="name" type="text"><br>
+                <label id="emaillabel" for="email">Email:</label>
+                <input id="emailinput" name="email" type="email"><br>
+                <br><br>
+                <label id="problemtypelabel" for="problemtype">Type of problem:</label>
+                <button id="problemButton" name="problemtype">Select</button><br>
+                <button id="pb1">Website suggestion/problem</button>
+                <button id="pb2">Payment issues</button>
+                <button id="pb3">Service issues</button>
+                <label id="problemlabel">Problem description:</label><br>
+                <input id="probleminput" type="text" placeholder="Describe your problem or feedback here"><br><br><br>
+                <button id="submitButton" type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="headerelements">
+            <button><a>· Home</a></button>
+            <button><a href="../EssentialsFolder/about.html">· About</a></button>
+            <button><a href="support.html">· Support</a></button>
+        </div>
+        <div id="policies">
+            <button><a href="../EssentialsFolder/cookiepolicy.html">· Cookie policy</a></button>
+        </div>
+        <div id="footerlogoimage">
+            <img src="../Images/LogoSmall.png">
+        </div>
+    </footer>
+
+    <script src="support.js"></script>
+    <script>
+        const homeButton = document.getElementById("homeButton");
+        const logoButton = document.getElementById("logoButton");
+        const accountButton = document.getElementById("accountButton");
+
+        window.onload = function(){
+            loggedIn = localStorage.getItem("loginsave");
+            if(loggedIn == "true"){
+                homeButton.href = "../MainFolder/overview.html";
+                logoButton.href = "../MainFolder/overview.html";
+                accountButton.style.display = "inline";
+            }
+            else{
+                homeButton.href = "../StartFolder/index.html";
+                logoButton.href = "../StartFolder/index.html";
+                accountButton.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

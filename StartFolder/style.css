@@ -1,0 +1,249 @@
+body{
+    margin:0;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    background-color:hsl(0, 0%, 100%);
+    border-bottom:2px solid black;
+}
+.logo img{
+    max-width:300px;
+}
+#headernav ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+#headernav ul li{
+    display:inline;
+    color:black;
+    font-weight:bold;
+    font-size:2rem;
+    border-radius:30px;
+    cursor:pointer;
+}
+#headernav ul li:hover{
+    background-color:hsl(0,0%,90%);
+}
+#headernav ul li a{
+    padding:10px 20px;
+    text-decoration:none;
+    color:black;
+}
+/*------------------------*/
+main{
+    display:flex;
+    background-color:hsl(240, 32%, 55%);
+    height:80vh;
+    justify-content:center;
+    align-items:center;
+}
+#leftcontainer{
+    flex:1;
+    background-color:hsla(0, 0%, 100%, 0);
+}
+#textcontainer{
+    padding:20px;
+    background-color:hsla(0, 0%, 100%, 0);
+    position:relative;
+    top:20%;
+    height:30%;
+}
+#textcontainer h2{
+    font-size:4rem;
+    margin:0;
+}
+#textcontainer p{
+    font-size:2rem;
+    margin:10px;
+}
+#textcontainerbuttoncontainer{
+    margin-top:50px;
+}
+#textcontainerbuttoncontainer button{
+    font-size:3rem;
+    border-radius:30px;
+    border:none;
+    width:5em;
+    height:1.5em;
+    cursor:pointer;
+}
+#signup{
+    background-color:hsl(0, 2%, 65%);
+}
+#signup a{
+    text-decoration:none;
+    color:black;
+}
+#signup:hover{
+    background-color:hsl(0, 0%, 55%);
+}
+#login{
+    background-color:hsl(60, 63%, 72%);
+}
+#login a{
+    text-decoration:none;
+    color:black;
+}
+#login:hover{
+    background-color:hsl(60, 33%, 57%);
+}
+#imagecontainer{
+    flex:1;
+    background-color:hsla(0, 0%, 100%, 0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    height:70%;
+}
+#imagecontainer img{
+    max-width:100%;
+    max-height:100%;
+    width:auto;
+    height:auto;
+}
+/*------------------------*/
+#signupMain{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+#dumbH2element{
+    background-color:hsl(60, 48%, 59%);
+    border-left:5px dotted black;
+    border-top:5px dotted black;
+    border-right:5px dotted black;
+    width:25%;
+    text-align:center;
+    font-size:3rem;
+}
+#signupBox{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-left:5px dotted black;
+    border-bottom:5px dotted black;
+    border-right:5px dotted black;
+    background-color:hsl(60, 48%, 59%);
+    width:25%;
+    height:30%;
+}
+#signupBox input{
+    position:relative;
+    width:50%;
+    height:15%;
+    font-size:2rem;
+    text-align:center;
+}
+#signupBox button{
+    font-size:3rem;
+    border:none;
+    border-radius:20px;
+    background-color:hsl(60, 100%, 50%);
+    cursor:pointer;
+}
+#signupBox button:hover{
+    background-color:hsl(60, 100%, 40%);
+}
+/*------------------------*/
+#loginMain{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:80vh;
+}
+#loginBox{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-left:5px dotted black;
+    border-bottom:5px dotted black;
+    border-right:5px dotted black;
+    background-color:hsl(89, 42%, 54%);
+    width:25%;
+    height:30%;
+}
+#loginBox input{
+    position:relative;
+    width:50%;
+    height:15%;
+    font-size:2rem;
+    text-align:center;
+}
+#loginBox button{
+    font-size:3rem;
+    border:none;
+    border-radius:20px;
+    background-color:hsl(83, 100%, 50%);
+    cursor:pointer;
+}
+#loginBox button:hover{
+    background-color:hsl(83, 100%, 40%);
+}
+#loginH2element{
+    background-color:hsl(89, 42%, 54%);
+    border-left:5px dotted black;
+    border-top:5px dotted black;
+    border-right:5px dotted black;
+    width:25%;
+    text-align:center;
+    font-size:3rem;
+}
+/*------------------------*/
+footer{
+    border-top:2px solid black;
+    display:flex;
+    padding:10px 20px;
+    background-color:hsl(0, 0%, 100%);
+    align-items:center;
+}
+#headerelements{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+#headerelements button{
+    position:relative;
+    width:50%;
+    font-size:1.5rem;
+    background-color:white;
+    border:none;
+    text-align:left;
+}
+#headerelements button a{
+    text-decoration:none;
+    color:black;
+}
+#policies{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+}
+#policies button{
+    position:relative;
+    width:50%;
+    font-size:1.5rem;
+    background-color:white;
+    border:none;
+    text-align:left;
+}
+#policies button a{
+    text-decoration:none;
+    color:black;
+}
+#footerlogoimage{
+    flex:1;
+    text-align:right;
+}
+#footerlogoimage img{
+    max-width:500px;
+}

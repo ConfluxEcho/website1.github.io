@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../StartFolder/style.css">
+    <link rel="stylesheet" href="setup.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="overview.html"><img src="../Images/LogoSmall.png" alt="logo"></a>
+        </div>
+        <nav id="headernav">
+            <ul>
+                <li><a href="overview.html">Home</a></li>
+                <li><a href="../EssentialsFolder/about.html">About</a></li>
+                <li><a href="../EssentialsFolder/support.html">Support</a></li>
+                <li><a href="../MainFolder/settings.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="setupmain">
+        <h1>Setup</h1>
+        <div id="setupdiv">
+            <div id="spenddiv">
+                <h2>What's your average spending per month?</h2>
+                <input id="spendinput">
+                <button onclick="nextFrame(1)" class="rightButton">▶</button>
+            </div>
+            <div id="budgetdiv">
+                <h2>What's your monthly budget?</h2>
+                <input id="budgetinput">
+                <button onclick="prevFrame(2)" class="leftButton">◀</button>
+                <button onclick="nextFrame(2)" class="rightButton">▶</button>
+            </div>
+            <div id="earningsdiv">
+                <h2>What are your monthly earnings?</h2>
+                <input id="earningsinput">
+                <button onclick="prevFrame(3)" class="leftButton">◀</button>
+                <button onclick="nextFrame(3)" class="rightButton">▶</button>
+            </div>
+            <div id="balancediv">
+                <h2>What's your current balance?</h2>
+                <input id="balanceinput">
+                <button onclick="prevFrame(4)" class="leftButton">◀</button>
+                <button onclick="nextFrame(4)" class="rightButton">▶</button>
+            </div>
+            <div id="savingsdiv">
+                <h2>How much do you manage to save monthly?</h2>
+                <input id="savingsinput">
+                <button onclick="prevFrame(5)" class="leftButton">◀</button>
+                <button onclick="nextFrame(5)" class="rightButton">▶</button>
+            </div>
+            <div id="goaldiv">
+                <h2>What's your savings goal?</h2>
+                <input id="goalinput">
+                <button onclick="prevFrame(6)" class="leftButton">◀</button>
+                <button id="submitButton" onclick="submit()" class="rightButton" style="color:lime;">▶</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="headerelements">
+            <button><a>· Home</a></button>
+            <button><a href="../EssentialsFolder/about.html">· About</a></button>
+            <button><a href="../EssentialsFolder/support.html">· Support</a></button>
+        </div>
+        <div id="policies">
+            <button><a href="../EssentialsFolder/cookiepolicy.html">· Cookie policy</a></button>
+        </div>
+        <div id="footerlogoimage">
+            <img src="../Images/LogoSmall.png">
+        </div>
+    </footer>
+    <script src="setup.js"></script>
+</body>
+</html>

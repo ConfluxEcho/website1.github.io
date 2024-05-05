@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../StartFolder/style.css">
+    <link rel="stylesheet" href="essentials.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a id="logoButton"><img src="../Images/LogoSmall.png" alt="logo"></a>
+        </div>
+        <nav id="headernav">
+            <ul>
+                <li><a id="homeButton">Home</a></li>
+                <li><a href="../EssentialsFolder/about.html">About</a></li>
+                <li><a href="../EssentialsFolder/support.html">Support</a></li>
+                <li><a id="accountButton" href="../MainFolder/settings.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="aboutusMain">
+        <div id="firstarrow"><img src="../Images/CurlyArrowNormal.png" alt="Arrow"></div>
+        <div id="secondarrow"><img src="../Images/CurlyArrowDashed.png" alt="Arrow"></div>
+        <div id="thirdarrow"><img src="../Images/CurlyArrowNormal.png" alt="Arrow"></div>
+        <div id="fourtharrow"><img src="../Images/CurlyArrowDashed.png" alt="Arrow"></div>
+        <h1><u>About us</u></h1>
+        <div id="ourmission">
+            <h2>Our mission</h2>
+            <pre>       Our mission? To tackle the beast called expenses with the finesse of a ninja and the charm of a comedian!
+            At BudgetBuddy, we believe that managing expenses shouldn't feel like wrestling a greased pig at a crowded
+            county fair. No more tears shed over misplaced receipts or late-night battles with spreadsheets! We're here
+            to revolutionize the way you handle your finances - with a sprinkle of humor and a dash of innovation. Say
+            goodbye to the days of guessing where your money went and hello to a world where tracking expenses is as
+            delightful as discovering forgotten cash in your winter coat pocket. Our team of expense wizards is on a mission
+            to turn your financial frowns upside down. With our user-friendly tools and quirky reminders, you'll be sailing
+            through budgeting like a pro in no time. Whether you're a penny-pincher or a spontaneous spender, we've got your
+            back like a trusty sidekick. So, buckle up and get ready for a journey filled with laughter, empowerment, and maybe
+            a few unexpected expenses along the way. With BudgetBuddy, managing your money has never been this entertaining.
+            Let's make expense tracking fun again!</pre>
+        </div>
+        <div id="teammembers">
+            <div id="teammembersHdiv"><h2>Our Team</h2></div>
+            <div id="teammembersUL">
+                <ul>
+                    <li>Joe Mama</li>
+                    <li>Ben Dover</li>
+                    <li>Isaac De Snuts</li>
+                </ul>
+            </div>
+        </div>
+        <div id="ourexperience">
+            <div id="bigimgdiv">
+                <div class="imgdiv"><img src="../Images/HappyPeople1.jpg" alt="Happy people"></div>
+                <div class="imgdiv"><img src="../Images/HappyPeople2.jpg" alt="Happy people"></div>
+                <div class="imgdiv"><img src="../Images/HappyPeople3.jpg" alt="Happy people"></div>
+            </div>
+            <h2>Our experience</h2>
+        </div>
+        <div id="ourusers">
+            <h2>Our users</h2>
+            <div id="ratings">
+                <div id="fivestar">
+                    <h3>⭐⭐⭐⭐⭐</h3>
+                    <pre>This platform is amazing!
+It saves my life everyday, it shows me all the things I need
+to know about my financial situation. I don't have to commit
+tax evasion anymore!!!
+                    </pre>
+                </div>
+                <div id="onestar">
+                    <h3>⭐</h3>
+                    <pre>Don't sign up for this BS!!!
+The exact same day I signed up my dog became an eagle and ate
+my goldfish. I then had to shoot him and eat him alive. I
+believe this site is causing real-life tragedy events.
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="headerelements">
+            <button><a>· Home</a></button>
+            <button><a href="../EssentialsFolder/about.html">· About</a></button>
+            <button><a href="../EssentialsFolder/support.html">· Support</a></button>
+        </div>
+        <div id="policies">
+            <button><a href="../EssentialsFolder/cookiepolicy.html">· Cookie policy</a></button>
+        </div>
+        <div id="footerlogoimage">
+            <img src="../Images/LogoSmall.png">
+        </div>
+    </footer>
+    <script>
+        const homeButton = document.getElementById("homeButton");
+        const logoButton = document.getElementById("logoButton");
+        const accountButton = document.getElementById("accountButton");
+
+        window.onload = function(){
+            loggedIn = localStorage.getItem("loginsave");
+            if(loggedIn == "true"){
+                homeButton.href = "../MainFolder/overview.html";
+                logoButton.href = "../MainFolder/overview.html";
+                accountButton.style.display = "inline";
+            }
+            else{
+                homeButton.href = "../StartFolder/index.html";
+                logoButton.href = "../StartFolder/index.html";
+                accountButton.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

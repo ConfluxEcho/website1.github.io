@@ -1,0 +1,59 @@
+#setupmain{
+    flex-direction:column;
+    position:relative;
+}
+#setupmain h1{
+    font-size:4rem;
+}
+#setupdiv{
+    background-color:hsl(0, 0%, 80%);
+    position:relative;
+    width:20%;
+    height:50%;
+}
+#spenddiv, #budgetdiv, #earningsdiv, #balancediv, #savingsdiv, #goaldiv{
+    position:relative;
+    width:100%;
+    height:100%;
+    display:none;
+}
+#spenddiv{
+    display:block;
+    background-color:hsl(0, 0%, 80%);
+    position:relative;
+    top:-4.5%;
+}
+h2{
+    position:relative;
+    top:20%;
+    left:8%;
+    font-size:2rem;
+}
+input{
+    position:relative;
+    top:60%;
+    left:10%;
+    width:80%;
+    height:10%;
+    font-size:2rem;
+    border:none;
+    border-bottom:3px solid hsla(0, 0%, 0%, 0.597);
+}
+.leftButton{
+    position:relative;
+    top:30%;
+    right:80%;
+    font-size:2rem;
+    background-color:hsl(0, 0%, 80%);
+    border:none;
+    cursor:pointer;
+}
+.rightButton{
+    position:relative;
+    top:30%;
+    right:0%;
+    font-size:2rem;
+    background-color:hsl(0, 0%, 80%);
+    border:none;
+    cursor:pointer;
+}

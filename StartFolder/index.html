@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #coin{
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="../StartFolder/index.html"><img src="../Images/LogoSmall.png" alt="logo"></a>
+        </div>
+        <nav id="headernav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../EssentialsFolder/about.html">About</a></li>
+                <li><a href="../EssentialsFolder/support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="indexmain">
+        <div id="leftcontainer">
+            <div id="textcontainer">
+                <h2>The best place to track your spendings, savings, and budgets.</h2>
+                <p>Our website allows you to have an overview of your financial resources.</p>
+                <p>When you sign up, the information - username, password and stuff used for this website - is stored on your local storage in your browser. You can see that by trying to sign up a new account but the exact same name as another one - it wont let you. To wipe the data, click the coin - the screen will flick and after that, all data is wiped. I would make a button but it looks ugly with it so I decided to go with this "easter egg"</p>
+                <div id="textcontainerbuttoncontainer">
+                    <button id="signup"><a style="font-family:Playfair Display" href="../AccountFolder/signup.html">Sign up</a></button>
+                    <button id="login"><a style="font-family:Playfair Display" href="../AccountFolder/login.html">Log in</a></button>
+                </div>
+            </div>
+        </div>
+        <div id="imagecontainer">
+            <img id="coin" src="../Images/bettercoin.png" alt="picture">
+        </div>
+    </main>
+
+    <footer>
+        <div id="headerelements">
+            <button><a>· Home</a></button>
+            <button><a href="../EssentialsFolder/about.html">· About</a></button>
+            <button><a href="../EssentialsFolder/support.html">· Support</a></button>
+        </div>
+        <div id="policies">
+            <button><a href="../EssentialsFolder/cookiepolicy.html">· Cookie policy</a></button>
+        </div>
+        <div id="footerlogoimage">
+            <img src="../Images/LogoSmall.png">
+        </div>
+    </footer>
+    <script>
+        const main = document.getElementById("indexmain");
+        const coin = document.getElementById("coin");
+        function wipe(event){
+            event.preventDefault();
+            localStorage.removeItem("users");
+            localStorage.removeItem("currentName");
+            main.style.backgroundColor = "red";
+            setTimeout(() => main.style.backgroundColor = "hsl(240, 32%, 55%)",100);
+            setTimeout(() => main.style.backgroundColor = "green",200);
+            setTimeout(() => main.style.backgroundColor = "hsl(240, 32%, 55%)",300);
+        }
+        coin.addEventListener("click",wipe);
+    </script>
+</body>
+</html>
